@@ -1,8 +1,19 @@
+@font-face {
+    font-family: jeko-font;
+    src: url(../fonts/Jeko\ Bold.ttf);
+}
 
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+}}
 /* HEADER SECTION */
 
 header {
     font-size: 20px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 nav {
@@ -12,6 +23,11 @@ nav {
 .navbar {
     position: relative; 
 }
+
+nav.navbar {
+    padding: 48px 18px;
+}
+
 
 .navbar::before,
 .navbar::after {
@@ -30,8 +46,8 @@ nav {
     right: 1%;
 }
 
-hr {
-    width: 98%;
+div.collapse {
+    justify-content: space-between;
 }
 
 i {
@@ -59,6 +75,10 @@ i {
     padding: 0;
 }
 
+ul.icons .nav-link i {
+    color: #000000;
+}
+
 ul.navbar-nav.icons {
     display: flex;
     align-items: center;
@@ -73,6 +93,10 @@ ul.navbar-nav.icons {
     border: none;
     letter-spacing: 2px;
     margin-left: 4px;
+}
+
+.navbar-edit {
+    justify-content: space-between;
 }
 
 .navigation {
@@ -92,12 +116,121 @@ ul.navbar-nav.icons {
     align-items: center;
 }
 
+button.navbar-toggler {
+    background: linear-gradient(45deg, #1D9BF0, #32599C);
+}
+
+button.navbar-toggler i {
+    padding-top: 5px;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    color: #000000;
+    font-family: 'Space Grotesk', sans-serif;
+    padding-bottom: 78px;
+    position: relative;
+    padding-top: 206px;
+}
+
+.hero-section::before {
+    content: "";
+    background-image: url(../images/circle-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-background {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 78px;
+}
+
+.hero-section .row .col-md-12:nth-child(1) h2 {
+    font-size: 100px;
+    font-weight: 700;
+    padding-left: 88px;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.hero-section .row .col-md-12:nth-child(2) h1 {
+    font-size: 200px;
+    font-weight: 700;
+    -webkit-text-stroke: 3px #32599C;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 0;
+    padding-left: 158px;
+}
+
+.hero-section .row .col-md-11 h2 {
+    font-size: 100px;
+    font-weight: 500;
+    text-align: right;
+    line-height: 1;
+}
+
+.hero-section .row .col-md-12:nth-child(4) {
+    margin-bottom: 84px;
+}
+
+.hero-section .row .col-md-12:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h4 {
+    font-family: jeko-font, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hero-section p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hero-section button {
+    background-image: linear-gradient(to left, #1D9BF0, #32599C);
+    font-size: 20px;
+    padding: 18px 36px;
+    border-radius: 35px;
+}
+
+.hero-section button::before {
+    content: url(../images/button-arrow.png);
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+.hero-section button i {
+    transform: rotate(315deg);
+}
+
+.hero-section img {
+    padding-left: 258px;
+}
+
 
 /* FOOTER SECTION */
 
 footer {
     font-family: 'Poppins', sans-serif;
     background-color: #F0F0F0;
+    padding: 0 2%;
 }
 
 .footer-group4 input {
@@ -120,7 +253,28 @@ footer {
 
 .primary-footer {
     padding: 96px 0px;
-    box-shadow: inset 0 -3px #f8f9fa;
+    
+}
+
+.primary-footer {
+    position: relative; 
+}
+
+.primary-footer::before,
+.primary-footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%; 
+    border-bottom: 1px solid #ccc;
+}
+
+.primary-footer::before {
+    left: 1%;
+}
+
+.primary-footer::after {
+    right: 1%;
 }
 
 .primary-footer h3 {
@@ -210,7 +364,7 @@ footer {
     color: white;
     background-image: linear-gradient(to left, #1D9BF0, #32599C);
     border: none;
-    padding: 4px 6px;
+    padding: 14px 18px;
 }
 
 .secondary-footer a {
