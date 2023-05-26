@@ -330,11 +330,12 @@ button.navbar-toggler i {
     position: absolute;
     left: 30px;
     top: 114px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .item-card:hover:after {
     width: 80%;
+    transition: 0.5s;
 }
 
 .item-card:hover img {
