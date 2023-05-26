@@ -1065,6 +1065,7 @@ footer {
     font-weight: 600;
     margin-bottom: 28px;
     color: #000;
+    margin-top: 18px;
 }
 
 .product-content {
@@ -1075,6 +1076,11 @@ footer {
 .product-content ul {
     color: black;
     margin-bottom: 38px;
+}
+
+.product-content h3 {
+    color: #000;
+    font-weight: 500;
 }
 
 .product-content h5 {
@@ -1097,16 +1103,13 @@ footer {
 }
 
 .product-content button {
-    margin-bottom: 12px;
-    margin-left: 20px;
+    margin-bottom: 28px;
     background: linear-gradient(to left, #1D9BF0, #32599C);
     border: none;
     padding: 10px 12px;
 }
 
-.product-content select {
-    padding: 2px 13px;
-}
+.product-content select {height: 40px;padding: 2px 12px;width: 50%;font-size: 18px;}
 
 
 /* Tablet Styles */
