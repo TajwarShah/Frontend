@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
 
     <title>Product Details</title>
 </head>
 <body>
+
 
      <!-- HEADER SECTION -->
      <header>
@@ -42,7 +44,7 @@
                     <a class="nav-link" href="./product-page.html">Product</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)">Category</a>
+                    <a class="nav-link" href="./product-details-page.html">Category</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0)">Blogs</a>
@@ -64,7 +66,76 @@
         </nav>
     </header>
 
-    
+    <section class="single-product-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-slider-left">
+                            <div class="card">
+                                <div class="demo">
+                                <ul id="lightSlider">
+                                    <li data-thumb="./images/product-image1.png"> <img src="./images/product-image1.png" /> </li>
+                                    <li data-thumb="./images/product-image2.png"> <img src="./images/product-image2.png" /> </li>
+                                    <li data-thumb="./images/product-image3.png"> <img src="./images/product-image3.png" /> </li>
+                                    <li data-thumb="./images/product-image5.png"> <img src="./images/product-image5.png" /> </li>
+                                    <li data-thumb="./images/product-image6.png"> <img src="./images/product-image6.png" /> </li>
+                                    <li data-thumb="./images/product-image7.png"> <img src="./images/product-image7.png" /> </li>
+                                    <li data-thumb="./images/product-image8.png"> <img src="./images/product-image8.png" /> </li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product-content">
+                            <h1>Product Name</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, qui! Totam aliquid, eius doloribus error architecto et quaerat accusamus quod iusto tenetur, ea odio exercitationem debitis deleniti. Repellat deleniti non quas, tempora adipisci qui error quasi iste suscipit tempore ducimus eveniet quod temporibus architecto voluptatem similique pariatur voluptates esse minus.</p>
+                            <p>Measurement:</p>
+                            <p>90cm height x 40cm dia</p>
+                            <p>90cm height x 40cm dia</p>
+                            <p>90cm height x 40cm dia</p>
+                            <p>90cm height x 40cm dia</p>
+                            <h6>Notes : </h6>
+                            <ul>
+                                <li>Please note minimum order of 15 is appreciated</li>
+                                <li>Please note minimum order of 15 is appreciated</li>
+                                <li>Please note minimum order of 15 is appreciated</li>
+                                <li>Please note minimum order of 15 is appreciated</li>
+                                <li>Please note minimum order of 15 is appreciated</li>
+                            </ul>
+                            <h5>$90</h5>
+                            <form action="">
+                                <span>Quantity</span>
+                                <div class="number">
+                                    <span class="minus">-</span>
+                                    <input type="text" value="1"/>
+                                    <span class="plus">+</span>
+                                </div>
+                                <button class="btn btn-danger">Add to Cart</button>
+                                <label for=""> 
+                                    Select Option
+                                    <select name="" id="">
+                                        <option value="option1">option1</option>
+                                        <option value="option2">option2</option>
+                                        <option value="option3">option3</option>
+                                    </select>
+                                </label>
+                                
+                                <label for=""> 
+                                    Select Option
+                                    <select name="" id="">
+                                        <option value="option1">option1</option>
+                                        <option value="option2">option2</option>
+                                        <option value="option3">option3</option>
+                                    </select>
+                                </label>
+                            </form>
+                        </div>
+                    </div>   
+            </div>
+        </div>
+    </section>
 
      <!-- FOOTER SECTION -->
     <footer>
@@ -185,9 +256,19 @@
     });
             
     </script>
+    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script> 
+    <script>
+        $('#lightSlider').lightSlider({
+        gallery: true,
+        item: 1,    
+        loop: true,
+        slideMargin: 0,
+        thumbItem: 6
+    });
+    </script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>

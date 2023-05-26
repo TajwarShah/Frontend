@@ -976,6 +976,139 @@ footer {
     color: white;
 }
 
+
+/* SINGLE PRODUCT PAGE STYLES */
+
+.single-product-section {
+    padding-top: 206px;
+    margin-bottom: 120px;
+    font-family: 'POPPINS';
+}
+
+
+.product-slider-left .card {
+    background-color: #fff;
+    padding: 14px;
+    border: none
+}
+#lightSlider li{}
+
+.product-slider-left .demo {
+    width: 100%
+}
+
+.product-slider-left ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+.product-slider-left li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer
+}
+
+.product-slider-left img {
+    display: block;
+    height: auto;
+    width: 100%
+}
+
+.product-content label {
+    display: block;
+}
+
+.product-content span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.product-content .number{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.product-content .minus{
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 0px 7px;
+    border: 1px solid #ddd;
+    margin-right: 1px;
+}
+
+.product-content  .plus {
+    background: #f2f2f2;
+    border-radius: 4px;
+    padding: 0px 5px;
+    border: 1px solid #ddd;
+    margin-left: 1px;
+}
+
+.product-content input{
+    height:34px;
+    width: 100px;
+    text-align: center;
+    font-size: 26px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    display: inline-block;
+    vertical-align: middle;
+} 
+.product-content h1 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    color: #000;
+}
+
+.product-content {
+    margin-bottom: 48px;
+    color: #888;
+}
+
+.product-content ul {
+    color: black;
+    margin-bottom: 38px;
+}
+
+.product-content h5 {
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-content h5:after {
+    content: "";
+    width: 74%;
+    height: 1px;
+    background-color: #ebe1e1;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.product-content button {
+    margin-bottom: 12px;
+    margin-left: 20px;
+    background: linear-gradient(to left, #1D9BF0, #32599C);
+    border: none;
+    padding: 10px 12px;
+}
+
+.product-content select {
+    padding: 2px 13px;
+}
+
+
 /* Tablet Styles */
 
 @media screen and (min-width: 992px) and (max-width: 1023px) {
